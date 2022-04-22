@@ -1,6 +1,8 @@
 package com.xworkz.interfaces.service;
 
 import com.xworkz.interfaces.dao.CustomerDAO;
+
+
 import com.xworkz.interfaces.dto.CustomerDTO;
 
 public class CustomerServiceImpl implements CustomerService{
@@ -8,6 +10,9 @@ public class CustomerServiceImpl implements CustomerService{
 	
 	private CustomerDAO customerDAO;
 	
+	private CustomerDTO[] customerDTOS=new CustomerDTO[10];
+	
+	private int counter=0;
 	
 	
 	
@@ -148,19 +153,16 @@ public class CustomerServiceImpl implements CustomerService{
 	@Override
 	public CustomerDTO findByName(String name) {
 
-		if(name!=null)
-		{
-			 CustomerDTO dtoFounded=customerDAO .findByName(name);
-			 return dtoFounded;
+		if(customerDTOS!=null) {
+			for(int i=0; i<name.length(); i++)
+			if(this.customerDTOS[counter]!=null && this.customerDTOS[counter].equals(customerDTOS)) {
+				System.out.println("DTO is found");
+				return customerDTOS[counter];
+			}
 		}
-		else {
-			System.out.println("not founded ");
-		}
-		
-		
-		return null;
-	}
-
+		System.out.println("DTO is  not found");
+		return customerDTOS[counter];
 	
 
+}
 }

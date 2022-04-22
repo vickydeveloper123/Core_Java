@@ -6,6 +6,7 @@ import com.xworkz.interfaces.constants.CustomerType;
 
 public class CustomerDTO implements Serializable {
 
+	public static final int length = 0;
 	private int id;
 	private String name;
 	private int customerId;

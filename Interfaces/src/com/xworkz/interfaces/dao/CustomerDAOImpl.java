@@ -38,7 +38,14 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 		if(name!=null)
 		{
-			int dtoFound=customerDTO.length;
+			if(this.customerDTO[index]!=null && this.customerDTO[index].getName().equals(name)  )
+
+                   {
+                	   System.out.println("CustomerDTO find by name @"+name);
+                	   return customerDTO[index];
+	
+                   }
+
 			
 		}
 		return null;
@@ -46,7 +53,24 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 	@Override
 	public boolean findDTO(CustomerDTO customerDTO) {
-		// TODO Auto-generated method stub
+
+		if(customerDTO!=null)
+		{
+			for(int i=0;i<customerDTO.length;i++)
+			{
+				if(this.customerDTO[i]!=null && this.customerDTO[i].getAddressDTO().equals(customerDTO))
+				{
+					System.out.println("Customer is found at @ "+customerDTO);
+					return true;
+				}
+				else
+				{
+					System.out.println("CustomerDTO is not found  @");
+				}
+				
+			}
+		}
+		
 		return false;
 	}
 
