@@ -50,7 +50,7 @@ public class CustomerServiceImpl implements CustomerService{
 			if(customerDTO.getName()==null || customerDTO.getName().length()<=3 ||customerDTO.getName().length()>50)
 			{
 				
-               System.err.println("id is incorrect");
+               System.err.println("name is incorrect");
 				return false;
 				
 			}
@@ -75,14 +75,14 @@ public class CustomerServiceImpl implements CustomerService{
 					|| String.valueOf(customerDTO.getMobile()).length()<=10 )
 				
 			{
-				System.err.println("id is incorrect");
+				System.err.println("mobile is incorrect");
 				return false;
 			}
 			
 			if(String.valueOf(customerDTO.getAlternativeMobile()).length()!=0 ||  
 					String.valueOf(customerDTO.getAlternativeMobile()).length()<=0)
 			{
-				System.err.println("id is incorrect");
+				System.err.println("alternative mobile no is incorrect");
 				return false;
 			}
 			
@@ -92,14 +92,14 @@ public class CustomerServiceImpl implements CustomerService{
 			    		
 			{
 
-				System.err.println("id is incorrect");
+				System.err.println("email is incorrect");
 				return false;
 			}
 			
 			if(customerDTO.getCustomerType().PREMIER!=null || customerDTO.getCustomerType().GOLD!=null
 					|| customerDTO.getCustomerType().SILVER!=null)
 			{
-				System.err.println("id is incorrect");
+				System.err.println("customer type is incorrect");
 				return false;
 			}
 				
