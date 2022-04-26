@@ -30,16 +30,7 @@ public class PoliticalPartyDTO {
 
 	public void setId(int id) {
 		
-		if(id>=0)
-		{
-			System.out.println("Id is found "+id);
-			return;
-			
-		}
-		else
-		{
-			System.err.println("Id is not found in the list");
-		}
+		
 		this.id = id;
 		
 	}
@@ -50,15 +41,7 @@ public class PoliticalPartyDTO {
 
 	public void setName(String name) {
 		
-		if(name.length()>=3 && name.length()<50 && name!="@")
-		{
-			System.out.println("Name is found"+name);
-			return;
-		}
-		else
-		{
-			System.err.println("Name not founded in the list");
-		}
+		
 		
 		
 		this.name = name;
@@ -70,15 +53,7 @@ public class PoliticalPartyDTO {
 
 	public void setPresidentName(String presidentName) {
 		
-		if(presidentName.length()>=3 && presidentName.length()<=50 && presidentName!="@")
-		{
-			System.out.println("president name found in the list"+presidentName);
-			return;
-		}
-		else
-		{
-			System.out.println("President name not founded in the list"+presidentName);
-		}
+		
 		
 		this.presidentName = presidentName;
 	}

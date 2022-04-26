@@ -1,5 +1,6 @@
 package com.xworkz.interfaces.dao;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,7 +19,7 @@ public class PoliticalDAOImplementor implements PoliticalDAO {
 		if(dto!=null)
 		{
 			list.add(dto);
-			System.out.println(list.get(index));
+			System.out.println(list);
 			index++;
 			return true;
 		}
@@ -31,40 +32,35 @@ public class PoliticalDAOImplementor implements PoliticalDAO {
 	@Override
 	public void deleteByName(String name) {
 
-		System.out.println("Running delete method in PoliticalDAOImplementor ");
-		for(int i=0;i<list.size();i++)
+		System.out.println("Running delete method in PoliticalDAOImplementor "+name);
+		
+		if(name!=null)
 		{
-			if(name!=null)
+			Iterator <PoliticalPartyDTO>  iterater=list.listIterator();
+			while(iterater.hasNext())
 			{
-				if(list.get(i).getName().equals(name));
-				System.out.println(list.get(i));
-				list.remove(i);
-			}
-			else
-			{
-				System.out.println("We cannot remove name because name is not eqaul");
-				System.out.println(list.get(i));
+				PoliticalPartyDTO dto=(PoliticalPartyDTO)iterater.next();
+				if(dto.getName().equals(name))
+				{
+					iterater.remove();
+					System.out.println(list.size());
+					return;
+				}
+				
 			}
 		}
 		
 	}
 	
 	
-	public void addingDTOelementsTOcollection(PoliticalPartyDTO  dto)
-	{
-		list.add(dto);
-	}
-	public void iterater()
-	{
-		System.out.println("Iterater");
-		
-		Iterator<PoliticalPartyDTO> h=list.iterator();
-		
-		while(h.hasNext())
-		{
-			System.out.println(h.next());
-		}
-	}
+	/*
+	 * public void addingDTOelementsTOcollection(PoliticalPartyDTO dto) {
+	 * list.add(dto); } public void iterater() { System.out.println("Iterater");
+	 * 
+	 * Iterator<PoliticalPartyDTO> h=list.iterator();
+	 * 
+	 * while(h.hasNext()) { System.out.println(h.next()); } }
+	 */
 	
 	
 	
