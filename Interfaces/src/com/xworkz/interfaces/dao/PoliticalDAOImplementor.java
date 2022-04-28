@@ -1,6 +1,7 @@
 package com.xworkz.interfaces.dao;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -50,6 +51,17 @@ public class PoliticalDAOImplementor implements PoliticalDAO {
 			}
 		}
 		
+	}
+
+	@Override
+	public List<PoliticalPartyDTO> sort(Comparator<PoliticalPartyDTO> comparator) {
+
+		if(comparator!=null)
+		{
+			list.sort(comparator);
+			return list;
+		}
+		return null;
 	}
 	
 	

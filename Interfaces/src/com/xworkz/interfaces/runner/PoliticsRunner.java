@@ -1,4 +1,6 @@
 package com.xworkz.interfaces.runner;
+import java.util.List;
+
 import com.xworkz.interfaces.dao.PoliticalDAO;
 import com.xworkz.interfaces.dao.PoliticalDAOImplementor;
 import com.xworkz.interfaces.dao.PoliticalService;
@@ -24,11 +26,15 @@ public class PoliticsRunner {
 		
 		
 	
+		
+		
 		politicalSercvices.validateandsave(politicalPartyDTO1);
 		politicalSercvices.validateandsave(politicalPartyDTO2);
 		politicalSercvices.validateandsave(politicalPartyDTO3);
 		politicalSercvices.validateandsave(politicalPartyDTO4);
 		politicalSercvices.validateandsave(politicalPartyDTO5);
+		
+		
 		
 		
 		politicalSercvices.deleteByName("vignesh");
@@ -42,6 +48,22 @@ public class PoliticsRunner {
 		  daoImplementer.deleteByName("VIGNESH");
 		  
 		  daoImplementer.save(politicalPartyDTO1);
+	
+		  
+		  System.out.println("============================");
+		  System.out.println("Sorting by using comparater");
+		  
+		  System.out.println("Sorting  By Name");
+		  
+		  List<PoliticalPartyDTO> sortingtechnique=politicalSercvices.sortByName();
+		  
+		  System.out.println("Sorting by poltical names"+ " "+sortingtechnique);
+		  
+		  List<PoliticalPartyDTO> sortingtechniquee=politicalSercvices.sortById();
+		  System.out.println("Sorting by political id =="+" "+sortingtechniquee);
+		  
+		  List<PoliticalPartyDTO> sortingtechniqueee=politicalSercvices.sortByNameAndId();
+		  System.out.println("Sorting by political Name and Id =="+" "+sortingtechniqueee);
 		  
 		  
 		 
