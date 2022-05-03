@@ -30,16 +30,16 @@ public class FoodItemRunner {
 	
 	
 	
-	FoodItemDTO fooditems1=new FoodItemDTO(101,"BIRYANI",150,1.0,Type.NON_VEGETERAIN,"RAYALASEEMA");
-	FoodItemDTO fooditems2=new FoodItemDTO(102,"CHICKEN BIRYANI",250,2.0,Type.NON_VEGETERAIN,"RAYALASEEMA");
-	FoodItemDTO fooditems3=new FoodItemDTO(103,"MUTTON BIRYANI",350,3.0,Type.NON_VEGETERAIN,"MURALIKRISHNA");
-	FoodItemDTO fooditems4=new FoodItemDTO(104,"FRANCE BIRYANI",250,4.0,Type.NON_VEGETERAIN,"MURALI KRISHNA");
-	FoodItemDTO fooditems5=new FoodItemDTO(105,"SADA BIRYANI",120,1.3,Type.VEGETERIAN,"RIYAZ");
-	FoodItemDTO fooditems6=new FoodItemDTO(106,"EGG BIRYANI",100,2.0,Type.VEGETERIAN,"A2B");
-	FoodItemDTO fooditems7=new FoodItemDTO(107,"SAMBAR RICE",110,1.0,Type.VEGETERIAN,"SIRI VENNALA");
-	FoodItemDTO fooditems8=new FoodItemDTO(108,"CURD RICE",50,5.0,Type.VEGETERIAN,"KOMAL VILAS");
-	FoodItemDTO fooditems9=new FoodItemDTO(109,"TAMATO RICE",70,2.0,Type.VEGETERIAN,"ABIRUCHULU");
-	FoodItemDTO fooditems10=new FoodItemDTO(110,"LEMON RICE",80,5.0,Type.VEGETERIAN,"ANDHRA FOODS");
+	FoodItemDTO fooditems1=new FoodItemDTO(101,"Biryani",150,1.0,Type.Non_Vegeterian,"Rayalseema");
+	FoodItemDTO fooditems2=new FoodItemDTO(102,"Chicken Biryani",250,2.0,Type.Non_Vegeterian,"Rayalseema");
+	FoodItemDTO fooditems3=new FoodItemDTO(103,"Mutton Biryani",350,3.0,Type.Non_Vegeterian,"Murali krishna");
+	FoodItemDTO fooditems4=new FoodItemDTO(104,"France Biryani",250,4.0,Type.Non_Vegeterian,"Murali Krishna");
+	FoodItemDTO fooditems5=new FoodItemDTO(105,"Sada Biryani",120,1.3,Type.Vegeterian,"RIYAZ");
+	FoodItemDTO fooditems6=new FoodItemDTO(106,"Egg Biryani",100,2.0,Type.Vegeterian,"A2B");
+	FoodItemDTO fooditems7=new FoodItemDTO(107,"Sambar Rice",110,1.0,Type.Vegeterian,"Siri Vennala");
+	FoodItemDTO fooditems8=new FoodItemDTO(108,"Curd Rice",50,5.0,Type.Vegeterian,"Komal Vilas");
+	FoodItemDTO fooditems9=new FoodItemDTO(109,"Tamato Rice",70,2.0,Type.Vegeterian,"Abiruchulu");
+	FoodItemDTO fooditems10=new FoodItemDTO(110,"Lemon Rice",80,5.0,Type.Vegeterian,"Andhra Foods");
 
  
 	fooditem.add(fooditems1);
@@ -142,7 +142,7 @@ public class FoodItemRunner {
      System.out.println("Loop and filter items by  veg type and sort desc ");
      
      fooditem.stream()
-     .map(items->items.getType()==Type.VEGETERIAN)  
+     .map(items->items.getType()==Type.Vegeterian)  
      .sorted(Comparator.reverseOrder())
      .forEach(vegeterianItems->System.out.println(vegeterianItems));
      
