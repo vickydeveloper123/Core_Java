@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+<bean class="com.xworkz.maven1jdbc.FastFood"></bean>
+
+<bean class="/maven1jdbc/src/com/xworkz/maven1jdbc/Camera.java" id="camera">
+
+<constructor-arg value="Oppo" type="String"/>
+<constructor-arg value="Oppo" type="String"/>
+<constructor-arg value="NELLORE" type="String"/>
+
+
+
+<property name="number of item" value="10"/>
+<property name="established from" value="2000"/>
+<property name="camera color" value="White"/>
+
+
+
+<!-- <constructor-arg value="12345.00" type="Double"/>
+<constructor-arg value="true" type="Boolean"/>
+<constructor-arg value="NELLORE" type="Charecter"/>
+<constructor-arg value="123.33" type="Float"/>
+<constructor-arg value="100000.0" type="BigDecimal"/> -->
+
+</bean>
+
+<bean class="java.lang.Double" id="double">
+<constructor-arg value="123.00" type="Double"/>
+
+</bean>
+
+
+<bean class="java.lang.Boolean" id="boolean">
+<constructor-arg value="true" type="boolean"/>
+</bean>
+
+
+<bean class="java.lang.Charecter" id="Charecter">
+<constructor-arg value="X" type="Charecter"/>
+
+
+</bean>
+
+
+<bean class="java.lang.Float" id="float">
+<constructor-arg value="123.00" type="float"/>
+</bean>
+
+
+<bean class="java.lang.Decimal" id="decimal">
+<constructor-arg value="123.00" type="decimal"/>
+
+</bean>
+
+
+
+<bean class="java.lang.StringBuffer" id="1">
+<constructor-arg value="parameterised constructor"/>
+</bean>
+
+<bean class="java.lang.StringBuffer" id="2">
+<constructor-arg value="12345" type="int"/>
+
+</bean>
+
+<bean class="java.lang.StringBuffer" id="3">
+<constructor-arg value="12345" type="int"/>
+
+</bean>
+
+
+
+<bean class="/maven1jdbc/src/com/xworkz/maven1jdbc/Camera.java" id="string"  >
+
+
+</bean>
+
+
+
+</beans>
