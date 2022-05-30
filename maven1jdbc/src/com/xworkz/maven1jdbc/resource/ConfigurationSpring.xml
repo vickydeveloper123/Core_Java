@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<bean class="com.xworkz.maven1jdbc.ConfigurationSpringsMethod"
+		id="configurationSpringMethod">
+
+		<property name="List">
+			<list>
+			    <value>LillyLitmus</value>
+				<value>Rose</value>
+				<value>Jasmine</value>
+				<!-- <value>Lotus</value>
+				<value>Allium</value>
+				<value>Alyssum</value>
+				<value>Anemone</value>
+				<value>Anise Hyssop</value>
+				<value>Bachelor’s Button</value> -->
+
+			</list>
+
+		</property>
+
+		<property name="Set">
+			<set>
+				<value>Nellore_Chennai-Express</value>
+				<value>Shamshabad-Express</value>
+				<value>Hyderabad-Express</value>
+				<value>Chennai-Express</value>
+				<value>Banglore_</value>
+
+			</set>
+		</property>
+
+		<property name="Map">
+			<map>
+				<entry key="Doctors" value="Hospital" />
+				<entry key="108" value="Ambulance" />
+				<entry key="Employes" value="Nurses" />
+
+			</map>
+		</property>
+
+		
+		
+		<property name="pros">
+		<props>
+			<prop key="admin">admin@nospam.com</prop>
+			<prop key="support">support@nospam.com</prop>
+		</props>
+	</property>
+	
+
+
+
+
+
+
+
+	</bean>
+</beans>
