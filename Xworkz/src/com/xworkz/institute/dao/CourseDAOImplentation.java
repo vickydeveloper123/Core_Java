@@ -16,14 +16,14 @@ public class CourseDAOImplentation implements CourseDAO {
 
 	@Override
 	public boolean save(CourseDTO dto) {
-		
-		String url = "jdbc:mysql://localhost:3306/xworkzjan15";
 
-		String username = "root";
-		String password = "Vignesh@8368";
-		
-		try (Connection connection = DriverManager.getConnection(url, username, password);
-				                                              //url.value,password.value,username.value
+		String URL = "jdbc:mysql://localhost:3306/xworkzjan15";
+
+		String USERNAME = "root";
+		String PASSWORD = "Vignesh@8368";
+
+		try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+				// url.value,password.value,username.value
 				PreparedStatement prepares = connection.prepareStatement(query))
 
 		{
@@ -34,11 +34,11 @@ public class CourseDAOImplentation implements CourseDAO {
 			prepares.setFloat(4, dto.getFees());
 			prepares.setString(5, dto.getStartDate().toString());
 			prepares.setBoolean(6, dto.isFree());
-			
-			int effectesRows=prepares.executeUpdate();
+
+			int effectesRows = prepares.executeUpdate();
 			System.out.println(effectesRows);
-			
-			return effectesRows== 1 ? true :false;
+
+			return effectesRows == 1 ? true : false;
 
 		} catch (SQLException e) {
 

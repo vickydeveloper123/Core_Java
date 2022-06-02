@@ -10,7 +10,17 @@ import com.xworkz.institute.dto.CourseDTO;
 
 public class CourseServiceImplementation implements CourseService {
 
-	CourseDAO dao = new CourseDAOImplentation();
+	private CourseDAO dao;// its just a property like classes we are having.
+
+	public CourseServiceImplementation(CourseDAO dao) {
+		this.dao = dao;
+
+	}
+
+	public CourseServiceImplementation() {
+
+		System.out.println("Default Course Service Implementation");
+	}
 
 	@Override
 	public boolean validate(CourseDTO dto) {
