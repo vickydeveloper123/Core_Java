@@ -8,7 +8,8 @@
 
 
 	<context:component-scan
-		base-package="com.xworkz.Employee-Details"></context:component-scan>
+		base-package="com.xworkz.EmployeeDetails"></context:component-scan>
+
 
 
 </beans>
