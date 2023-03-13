@@ -1,0 +1,21 @@
+package CollectionFramework;
+
+import java.util.ArrayList;
+
+public class HasPrevious {
+
+	public static void main(String[] args) {
+		ArrayList<String> arrayList=new ArrayList<String>();
+		
+		for(int j=0;j<=5;j++) {
+			
+			X a=new X();
+			a.i=;
+			
+			System.out.println("NumbersList"+a);
+			
+			
+		}
+		
+	}
+}

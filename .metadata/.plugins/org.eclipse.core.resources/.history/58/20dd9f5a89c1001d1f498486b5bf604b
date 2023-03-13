@@ -1,0 +1,27 @@
+package HashMap;
+
+import java.util.HashMap;
+
+public class HashMapRunner {
+	
+	public static void main(String[] args) {
+		
+		HashMap<K,V> hashmap=new HashMap<K,V>();
+		
+		for(int i=0;i<=5;i++) {
+			
+			K aa=new K();
+			aa.key=i;
+			
+			V aaa=new V();
+			aaa.value=i+5;
+			
+			hashmap.put(aa, aaa);
+		}
+		
+		
+	}
+
+	
+	
+}

@@ -1,0 +1,17 @@
+package CollectionFramework;
+
+public class for_each {
+	
+	public static void main(String[] args) {
+		
+		int numbers[]=new int[2];
+		for(int i=0;i<9;i++) {
+			
+		}
+		
+		for(int i:numbers) {
+			System.out.println(i);
+		}
+	}
+
+}

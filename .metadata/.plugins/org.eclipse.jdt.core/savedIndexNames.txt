@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\doras\CollectionsFramework\.metadata\.plugins\org.eclipse.jdt.core
+2968380251.index
+3138893956.index

@@ -1,0 +1,14 @@
+package CollectionFramework;
+
+import java.util.ArrayList;
+
+public class DemoRunner {
+	public static void main(String[] args) {
+		
+		ArrayList<X> arrayX=new ArrayList<X>();
+		
+		System.out.println("Initially the size of an array ==>"+arrayX.size());
+		System.out.println(arrayX.isEmpty());
+	}
+
+}

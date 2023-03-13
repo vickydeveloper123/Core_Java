@@ -1,0 +1,24 @@
+package CollectionFramework;
+
+import java.util.ArrayList;
+
+public class ArrayListClass {
+	
+	public static void main(String[] args) {
+		ArrayList<X> arrayList=new ArrayList<X>();
+		System.out.println("Initially size of an Array===>"+arrayList.size());
+		
+		for(int i=0;i<=5;i++) {
+			
+			X a=new X();
+			a.i=i+5;
+			
+			arrayList.add(a);
+			
+		}
+		
+		System.out.println("Now size of an Array ==> "+arrayList.size());
+	}
+	
+
+}

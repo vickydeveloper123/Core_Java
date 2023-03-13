@@ -1,0 +1,16 @@
+package CollectionFramework;
+import java.util.*;
+
+public class TreeSet {
+	
+	public static void main(String[] args) {
+		
+		TreeSet<Integer> treeSet=new TreeSet<Integer>();
+		
+		for(int i=0;i<=5;i++) {
+			
+		}
+		
+	}
+
+}

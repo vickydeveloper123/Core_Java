@@ -1,0 +1,25 @@
+package CollectionFramework;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+	
+	public static void main(String[] args) {
+		LinkedList<X> setting=new LinkedList<X>();
+		
+		for(int i=0;i<=5;i++) {
+			X x=new X();
+			x.i=i;
+			setting.add(x);
+		}
+		
+		X x1=new X();
+		x1.i=100;
+		setting.set(1,x1);
+
+		for(X B:setting) {
+			System.out.println(B.i);
+		}
+	}
+
+}

@@ -1,0 +1,41 @@
+package CollectionFramework;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class HasPrevious {
+
+	public static void main(String[] args) {
+		ArrayList<X> arrayList=new ArrayList<X>();
+		
+		for(int j=0;j<=5;j++) {
+			
+			X a=new X();
+			a.i=j;
+			
+			System.out.println("NumbersList ="+j);
+			
+		}
+		
+
+		System.out.println("+====\\");
+		System.out.println("ForwordTraversing");
+		
+		ListIterator<X> listIterater=arrayList.listIterator();
+		while(listIterater.hasNext()) {
+	     	X a1=listIterater.next();
+	     	System.out.println(a1.i);
+		}
+		
+		System.out.println("BackwordTraversing");
+		
+	   while(listIterater.hasPrevious()) {
+	     	X a2=listIterater.previous();
+	     	System.out.println(a2.i);
+
+		   
+		   
+	   }
+		
+	}
+}
