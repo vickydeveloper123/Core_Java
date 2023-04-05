@@ -1,0 +1,10 @@
+package com.xworkz.strings.stringbuilder.stringbuffer;
+
+public class Strings {
+
+	public static void main(String[] args) {
+		
+		String S="VCUBE Software solutions hyderabad";
+		System.out.println(S);
+	}
+}
