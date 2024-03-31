@@ -1,0 +1,5 @@
+enum MovieType{
+
+HORROR,ROMMANCE,COMEDY,ACTION;
+
+}
