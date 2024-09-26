@@ -22,7 +22,7 @@ public class Address implements Cloneable {
 	
 	
 	@Override
-		protected Object clone() throws CloneNotSupportedException {
+		protected Address clone() throws CloneNotSupportedException {
 			return super.clone();
 		}
 
