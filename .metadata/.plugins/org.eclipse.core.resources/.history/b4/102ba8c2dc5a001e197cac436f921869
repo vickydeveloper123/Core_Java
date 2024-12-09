@@ -1,0 +1,25 @@
+package com.finall;
+
+public class finll {
+	
+	
+		 final String nameOfEmployee="Vignesh";
+		 
+		  final int empNo=23;
+		  
+		  final void method() {
+			  
+			  System.out.println("Hi this is the final method in the class finll");
+		  }
+		 
+
+		
+		
+		 public static void main(String[] args) {
+			 finll ref= new finll();
+			 System.out.println(ref.empNo);
+			 
+			 System.out.println(ref.nameOfEmployee);
+		 }
+
+}

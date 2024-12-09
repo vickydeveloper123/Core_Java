@@ -1,0 +1,10 @@
+package com.vignesh;
+
+public class Address {
+	
+	private String nameOfCity;
+	private int pinCode;
+	
+	
+
+}

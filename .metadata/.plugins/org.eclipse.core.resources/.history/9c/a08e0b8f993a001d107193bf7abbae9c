@@ -1,0 +1,28 @@
+package com.vignesh;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeRunner {
+	public static void main(String[] args) {
+		
+		Employers ref1=new Employers("Vignesh",40000000.2, new Address("Nellore",52004),22);
+		Employers ref2=new Employers("renu",4023400.2, new Address("Dharwada",52004),24);
+		Employers ref3=new Employers("Venkat",40345430.2, new Address("Nellore",52004),56);
+		
+		
+		List<Employers> data=new ArrayList<>();
+		data.add(ref1);
+		data.add(ref2);
+		data.add(ref3);
+		System.out.println(data);
+		
+		
+		
+		
+		
+
+		
+	}
+
+}

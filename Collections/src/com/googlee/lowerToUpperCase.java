@@ -15,7 +15,7 @@ public class lowerToUpperCase {
 			
 			String srrr=scanner.nextLine();
 			char[] charecterArray=srrr.toCharArray();
-            System.out.println();
+            System.out.println(charecterArray);
             
             for (int j = 0; j < charecterArray.length; j++) {
             	

@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\doras\InterviewQuestions\.metadata\.plugins\org.eclipse.jdt.core
+3687267752.index
+2090482743.index
+2539820890.index
+2007685419.index
+2576000250.index
+3138893956.index

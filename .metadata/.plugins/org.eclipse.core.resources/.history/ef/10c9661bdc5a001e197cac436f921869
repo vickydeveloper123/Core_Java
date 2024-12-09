@@ -1,0 +1,16 @@
+package com.finall;
+
+public class finll {
+	
+	public static void main(String[] args) {
+		 final String nameOfEmployee="Vignesh";
+		 
+		 final int empNo=23;
+		 
+		 finll ref=new finll();
+
+		 
+		
+	}
+
+}

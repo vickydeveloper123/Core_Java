@@ -1,0 +1,14 @@
+package com.vignesh;
+
+public class Address implements Comparable<Address> {
+	
+	private String nameOfCity;
+	private int pinCode;
+	@Override
+	public int compareTo(Address o) {
+		return this.pinCode-o.pinCode;
+	}
+	
+	
+
+}

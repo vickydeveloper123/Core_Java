@@ -1,0 +1,10 @@
+package com.vignesh;
+
+public class EmployeeRunner {
+	public static void main(String[] args) {
+		
+		Employers ref1=new Employers("Vignesh",400.2, new Address("Nellore",52004));
+		
+	}
+
+}

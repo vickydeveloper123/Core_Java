@@ -1,0 +1,20 @@
+package com.absrtactt;
+ import com.google.pattern;
+public class abstracdt {
+	
+	String empName="Vignesh";
+	int empNumber=123;
+	
+	void method() {
+		System.out.println("Abstract Method is Running");
+	}
+	
+	public static void main(String[] args) {
+		 
+		abstracdt ref=new abstracdt();
+		 System.out.println(ref.empName);
+		 System.out.println(ref.empNumber);
+		 ref.method();
+	}
+
+}

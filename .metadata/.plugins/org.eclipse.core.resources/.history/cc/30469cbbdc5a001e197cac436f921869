@@ -1,0 +1,20 @@
+package com.finall;
+
+public class finll {
+	
+	
+		 final String nameOfEmployee="Vignesh";
+		 
+		  final int empNo=23;
+		 
+
+		
+		
+		 public static void main(String[] args) {
+			 finll ref= new finll();
+			 System.out.println(ref.empNo);
+			 
+			 System.out.println(ref.nameOfEmployee);
+		 }
+
+}
